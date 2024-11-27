@@ -54,6 +54,7 @@ export const signupUser = async (req, res) => {
 export const loginUser = async (req, res) => {
   try {
     const { email, password, role } = req.body;
+    // console.log(email,password)
     if (!email) {
       throw new Error("Email is required");
     }
